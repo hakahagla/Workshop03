@@ -1,6 +1,6 @@
 ---
 title: "Lab 03 - Take a sad plot and make it better"
-author: "User1, User2, User3 and User4 - Team Name"
+author: "Assa, User2, User3 and User4 - Wide Donkey"
 date: "`r Sys.Date()`"
 output: html_document
 ---
@@ -85,11 +85,11 @@ How many observations are there in the data set?
 ## Exercise 2
 
 ```{r pivoting}
-## Uncomment and complete the following code
 
-#staff_long <- ___ %>%
-#  ___(
-#    cols = ____, 
+
+staff_long <- staff %>%
+  pivot_longer(
+    cols = 1975,1989,1993,1995,1999,2001,2003,2005,2009,2011, 
 #    names_to = "_____",
 #    values_to = "percent"
 #    )
